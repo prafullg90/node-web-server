@@ -55,6 +55,14 @@ app.get('/about',(req, res)=>{
     });
 })
 
+app.get('/project',(req, res)=>{
+    res.render('project.hbs',{
+        htmlTitle: 'Project',
+        pageTitle: 'Project Page From Main Page',
+        welcomeMeassage: 'Hallo Prafull, Have a nice day. this is Project page',
+        
+    });
+})
 
 app.listen(port, ()=>{
     console.log(`Server is live now on ${port} port..`);
